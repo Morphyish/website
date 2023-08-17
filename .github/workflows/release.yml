@@ -18,3 +18,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MORPHYISH_86F09 }}'
           projectId: morphyish-86f09
+          channelId: live

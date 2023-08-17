@@ -26,3 +26,9 @@ Change the remote origin's url
 ```shell
 git remote set-url origin <new_url>
 ```
+
+Set up identity
+```shell
+git config --global user.email "<user_email>"
+git config --global user.name "<user_name>"
+```

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+    <style>
+        .c{
+        transform-origin:75px 75px;
+        transform:rotate(0);
+        animation:c 4s infinite
+        }
+        @keyframes c{
+        0%{transform:rotate(0)}
+        90%{transform:rotate(0)}
+        100%{transform:rotate(90deg)}
+        }
+        .c2{
+        width:30px;
+        height:30px;
+        opacity:.3;
+        transform-origin:var(--o);
+        fill:currentColor;
+        animation:b 4s infinite var(--d);
+        }
+        @keyframes b{
+        0%{transform:rotate(0);opacity:.3}
+        5%{opacity:1}
+        10%,100% {transform:rotate(90deg);opacity:.3}
+        }
+    </style>
+    <g class="c">
+        <rect class="c2" x="25" y="25" style="--o:40px 40px;--d:0s"/>
+        <rect class="c2" x="60" y="25" style="--o:75px 40px;--d:.4s"/>
+        <rect class="c2" x="95" y="25" style="--o:110px 40px;--d:.8s"/>
+        <rect class="c2" x="25" y="60" style="--o:40px 75px;--d:1.2s "/>
+        <rect class="c2" x="60" y="60" style="--o:75px 75px;--d:1.6s "/>
+        <rect class="c2" x="95" y="60" style="--o:110px 75px;--d:2s "/>
+        <rect class="c2" x="25" y="95" style="--o:40px 110px;--d:2.4s "/>
+        <rect class="c2" x="60" y="95" style="--o:75px 110px;--d:2.8s "/>
+        <rect class="c2" x="95" y="95" style="--o:110px 110px;--d:3.2s "/>
+    </g>
+</svg>

@@ -1,0 +1,91 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .ring, .rings {
+        transform-origin: 885px 500px
+        }
+        .rings {
+        animation: rotate 294s linear infinite reverse;
+        }
+        .axis1 { transform: rotate(-17deg) }
+        .axis2 { transform: rotate(-17deg) }
+        .axis3 { transform: rotate(-15deg) }
+        .planet {
+        animation: rotate 10s linear infinite;
+        transform-origin: 500px 500px;
+        }
+        .mercury { animation-duration: 2.4s }
+        .venus { animation-duration: 6.1s }
+        .earth { animation-duration: 10s }
+        .mars { animation-duration: 18s }
+        .jupiter { animation-duration: 119s }
+        .saturn { animation-duration: 294s }
+        .uranus { animation-duration: 837s }
+        .neptune { animation-duration: 1637s }
+        .pluto { animation-duration: 2479s }
+        .moon {
+        animation: rotate 1.7s linear infinite;
+        transform-origin: 680px 500px;
+        }
+        .io {
+        animation: rotate 3.5s linear infinite;
+        transform-origin: 795px 500px;
+        }
+        .europa {
+        animation: rotate 4.5s linear  infinite;
+        transform-origin: 795px 500px;
+        }
+        .ganymede {
+        animation: rotate 4s linear infinite;
+        transform-origin: 795px 500px;
+        }
+        .pulse {
+        animation: pulse 3s ease-in-out infinite;
+        transform-origin: center;
+        }
+        .delay1 { animation-delay: 1s; }
+        .delay2 { animation-delay: 2s; }
+        @keyframes rotate {
+        0% { transform: rotate(0deg) }
+        100% { transform: rotate(360deg) }
+        }
+        @keyframes pulse {
+        0% {
+        transform: scale(1);
+        opacity: .6;
+        }
+        100% {
+        transform: scale(1.25);
+        opacity: 0;
+        }
+        }
+    </style>
+    <circle cx="500" cy="500" r="80" stroke="currentColor" fill="currentColor"/>
+    <circle cx="500" cy="500" r="80" stroke="currentColor" fill="none" class="pulse"/>
+    <circle cx="500" cy="500" r="80" stroke="currentColor" fill="none" class="pulse delay1"/>
+    <circle cx="500" cy="500" r="80" stroke="currentColor" fill="none" class="pulse delay2"/>
+    <circle cx="610" cy="500" r="3" fill="currentColor" class="planet mercury"/>
+    <circle cx="645" cy="500" r="5" stroke="currentColor" fill="none" class="planet venus"/>
+    <g class="planet earth">
+        <circle cx="680" cy="500" r="5" stroke="currentColor" fill="none" stroke-width="2"/>
+        <circle cx="690" cy="500" r="1" fill="currentColor" class="moon"/>
+    </g>
+    <circle cx="710" cy="500" r="4" fill="currentColor" class="planet mars"/>
+    <circle cx="500" cy="500" r="240" stroke="currentColor" fill="none" stroke-dasharray="1 5"/>
+    <g class="planet jupiter">
+        <circle cx="795" cy="500" r="25" stroke="currentColor" fill="none" stroke-width="5"/>
+        <circle cx="827" cy="500" r="2" stroke="currentColor" fill="none" class="io"/>
+        <circle cx="833" cy="500" r="2" fill="currentColor" class="europa"/>
+        <circle cx="838" cy="500" r="1" fill="currentColor" class="ganymede"/>
+    </g>
+    <g class="planet saturn">
+        <circle cx="885" cy="500" r="22" stroke="currentColor" fill="none"/>
+        <g class="rings">
+            <ellipse cx="881" cy="500" rx="32" ry="3" stroke="currentColor" fill="none" class="ring axis1"/>
+            <ellipse cx="889" cy="500" rx="32" ry="3" stroke="currentColor" fill="none" class="ring axis2"/>
+            <ellipse cx="885" cy="500" rx="32" ry="3" stroke="currentColor" fill="none" class="ring axis3"/>
+        </g>
+    </g>
+    <circle cx="950" cy="500" r="10" fill="currentColor" class="planet uranus"/>
+    <circle cx="975" cy="500" r="6" stroke="currentColor" fill="none" class="planet neptune"/>
+    <circle cx="995" cy="500" r="2" fill="currentColor" class="planet pluto"/>
+</svg>

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Non-exhaustive list of software, tools and libraries I'm using.
 
-Trying to keep it agnostic, but this is mostly what I would expect to work with on any job.
+Trying to keep it agnostic, but this is mostly what I would expect to work with on any project.
 
 ## Dev environment
 

@@ -46,6 +46,17 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        pages: {
+          path: 'src/pages',
+          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+          mdxPageComponent: '@theme/MDXPage',
+        },
       }),
     ],
   ],
@@ -69,6 +80,7 @@ const config = {
             position: 'left',
             label: 'Code',
           },
+          {to: '/svg', label: 'SVG', position: 'left'},
         ],
       },
       footer: {
@@ -84,6 +96,10 @@ const config = {
               {
                 label: 'Code',
                 to: '/docs/intro',
+              },
+              {
+                label: 'SVG',
+                to: '/svg',
               },
             ],
           },

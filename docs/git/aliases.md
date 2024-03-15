@@ -1,7 +1,7 @@
 # Aliases
 
 ```shell
-git config --global alias.push-u 'push origin HEAD'
+git config --global alias.push-u 'push --set-upstream origin HEAD'
 ```
 
 ```shell
